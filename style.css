@@ -16,6 +16,7 @@ body {
   min-width: 40rem;
   width: 100%;
   height: 9vh;
+  padding: 0.6rem;
 }
 
 .nav {
@@ -72,7 +73,84 @@ body {
   cursor: pointer;
 }
 
-.btn:hover {
+.btn--singin:hover {
   background-color: #5094ed;
   box-shadow: 0px 0.5px 1px rgba(80,148,237,0.9);
+}
+
+.btn--search {
+  width: 15rem;
+  height: 3.5rem;
+  font-size: 1.4rem;
+  color: #323232;
+  background-color: #f8f9fa;
+}
+
+.btn--search:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0px 0px 1px 1px rgb(219,221,225);
+}
+
+.main {
+  width: 100%;
+  height: 77vh;
+  text-align: center;
+}
+
+.logo__thumbnail {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.logo__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.search {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search__form {
+  position: relative;
+  width: 57.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  border: solid 0.15rem #dfe1e5;
+  border-radius: 14rem;
+}
+
+.search__form:hover {
+  box-shadow: 0px 0.5px 3px rgba(0,0,0, 0.3);
+}
+
+.lupa {
+  position: absolute;
+  left: 1.5rem;
+  color:#b3b8bc;
+}
+
+.search__input {
+  width: 50rem;
+  height: 4rem;
+  font-size: 1.6rem;
+  padding: 2rem;
+  border: none;
+}
+
+.search__input:focus-visible {
+  outline: none;
+}
+
+.microfono {
+  position: absolute;
+  right: 1.5rem;
+  color:#b3b8bc;
+  cursor: pointer;
 }
