@@ -40,6 +40,7 @@ body {
 .nav-img {
   height: 2rem;
   width: 2rem;
+  position: relative;
 }
 
 .nav-img img {
@@ -47,9 +48,21 @@ body {
   height: auto;
 }
 
+.nav-img:hover::after{
+  content: '';
+  position: absolute;
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+  background-color: rgba(0,0,0,0.37);
+  border-radius: 50%;
+  top: -1rem;
+  right: -1rem;
+}
+
 .nav-btn {
-  width: 12rem;
-  height: 3.5rem;
+  width: 11rem;
+  height: 3rem;
   padding: 0.8rem;
   border-radius: 0.3rem;
   background-color: #1a73e8;
@@ -62,10 +75,3 @@ body {
   background-color: #5094ed;
   box-shadow: 0px 0.5px 1px rgba(80,148,237,0.9);
 }
-
-/* .nav-btn::after{
-  background-color: #ebecec;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 50%;
-} */
