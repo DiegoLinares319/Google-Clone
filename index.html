@@ -5,9 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/082fd1b499.js" crossorigin="anonymous"></script>
     <title>Google Clone</title>
   </head>
   <body>
-    
+    <header class="header">
+      <nav class="nav">
+        <a class='nav__link' href="#">Gmail</a>
+        <a class='nav__link' href="#">Imágenes</a>
+        <a class='nav__link' href="#" title="Google Apps">
+          <figure class='nav__thumbnail'>
+            <img class='nav__img' src="./img/ninepoint.png">
+          </figure>
+        </a>
+        <button class="btn btn--singin">Iniciar sesión</button>
+      </nav>
+    </header>
+    <main class="main">
+      <figure class="logo__thumbnail">
+        <img class="logo__img" src="./img/GoogleImg.png" alt="Logo de Google">
+      </figure>
+      <section class="search">
+        <div class="search__form">
+          <i class="fas fa-search lupa"></i>
+          <input class="search__input" type="text" title="Buscar"/>
+          <i class="fas fa-microphone microfono" title="Busqueda por voz"></i>
+        </div>
+        <div class="container__buttons">
+          <button class="btn btn--search">Buscar en Google</button>
+          <button class="btn btn--search">Me siento con suerte</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__country">
+        <p class="footer__country--peru">Perú</p>
+      </div>
+      <div class="footer__aboutus">
+        <a class="footer__link" href="#">Sobre Google</a>
+        <a class="footer__link" href="#">Publicidad</a>
+        <a class="footer__link" href="#">Negocios</a>
+        <a class="footer__link" href="#">Cómo funciona la Búsqueda</a>
+      </div>
+      <div class="footer__information">
+        <a class="footer__link" href="#">Privacidad</a>
+        <a class="footer__link" href="#">Condiciones</a>
+        <a class="footer__link" href="#">Preferencias</a>
+      </div>
+    </footer>
   </body>
 </html>
