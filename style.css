@@ -15,7 +15,7 @@ body {
 .header {
   min-width: 40rem;
   width: 100%;
-  height: 9vh;
+  height: 10vh;
   padding: 0.6rem;
 }
 
@@ -92,8 +92,9 @@ body {
 }
 
 .main {
+  min-width: 40rem;
   width: 100%;
-  height: 73.5vh;
+  height: 72vh;
   text-align: center;
 }
 
@@ -110,6 +111,7 @@ body {
 .search {
   width: 100%;
   height: auto;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,7 +139,7 @@ body {
 }
 
 .search__input {
-  width: 50rem;
+  width: 86%;
   height: 4rem;
   font-size: 1.6rem;
   padding: 2rem;
@@ -156,17 +158,19 @@ body {
 }
 
 .footer {
+  min-width: 40rem;
   width: 100%;
-  height: 14.5vh;
+  height: 15vh;
   background-color: #f2f2f2;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer__country {
   width: 100%;
-  height: 50%;
+  height: 35%;
   display: flex;
   align-items: center;
   padding-left: 3rem;
@@ -186,11 +190,72 @@ body {
 }
 
 .footer__link {
-  padding: 0 1.1rem 0 1.1rem;
+  padding: 0 1.1rem 1rem 1.1rem;
   color: #6f6f6f;
   text-decoration: none;
+  display: inline-block;
 }
 
 .footer__link:hover {
   text-decoration: underline;
+}
+
+@media (max-width:856px) {
+  .main {
+    height: 66vh;
+  }
+
+  .search__form {
+    max-width: 95%;
+  }
+
+  .footer {
+    height: 21vh;
+    justify-content: space-evenly;
+  }
+
+  .footer__aboutus {
+    margin-left: 0rem;
+  }
+  
+  .footer__information {
+    margin-right: 0rem;
+  }
+
+  .footer__link {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+  }
+}
+
+@media (max-width:545px) {
+  .main {
+    height: 55vh;
+  }
+
+  .footer {
+    height: 32vh;
+    justify-content: baseline;
+  }
+
+  .footer__country {
+    height: 25%;
+  }
+
+  .footer__aboutus {
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .footer__information {
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer__link {
+    padding: 1.85rem 1.85rem 1rem 1.85rem;
+  }
 }
