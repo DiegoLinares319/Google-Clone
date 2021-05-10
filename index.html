@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <script src="https://kit.fontawesome.com/082fd1b499.js" crossorigin="anonymous"></script>
     <title>Google Clone</title>
   </head>
@@ -14,9 +16,9 @@
         <a class='nav__link' href="#">Gmail</a>
         <a class='nav__link' href="#">Imágenes</a>
         <a class='nav__link' href="#" title="Google Apps">
-          <figure class='nav__thumbnail'>
-            <img class='nav__img' src="./img/ninepoint.png">
-          </figure>
+          <span class="material-icons nav__icon">
+            apps
+          </span>
         </a>
         <button class="btn btn--singin">Iniciar sesión</button>
       </nav>
@@ -27,9 +29,13 @@
       </figure>
       <section class="search">
         <div class="search__form">
-          <i class="fas fa-search lupa"></i>
+          <span class="material-icons lupa">
+            search
+          </span>            
           <input class="search__input" type="text" title="Buscar"/>
-          <i class="fas fa-microphone microfono" title="Busqueda por voz"></i>
+          <span class="material-icons microfono" title="Busqueda por voz">
+            keyboard_voice
+          </span>
         </div>
         <div class="container__buttons">
           <button class="btn btn--search">Buscar en Google</button>
@@ -41,16 +47,18 @@
       <div class="footer__country">
         <p class="footer__country--peru">Perú</p>
       </div>
-      <div class="footer__aboutus">
-        <a class="footer__link" href="#">Sobre Google</a>
-        <a class="footer__link" href="#">Publicidad</a>
-        <a class="footer__link" href="#">Negocios</a>
-        <a class="footer__link" href="#">Cómo funciona la Búsqueda</a>
-      </div>
-      <div class="footer__information">
-        <a class="footer__link" href="#">Privacidad</a>
-        <a class="footer__link" href="#">Condiciones</a>
-        <a class="footer__link" href="#">Preferencias</a>
+      <div class="footer__bottom">
+        <div class="footer__aboutus">
+          <a class="footer__link" href="#">Sobre Google</a>
+          <a class="footer__link" href="#">Publicidad</a>
+          <a class="footer__link" href="#">Negocios</a>
+          <a class="footer__link" href="#">Cómo funciona la Búsqueda</a>
+        </div>
+        <div class="footer__information">
+          <a class="footer__link" href="#">Privacidad</a>
+          <a class="footer__link" href="#">Condiciones</a>
+          <a class="footer__link" href="#">Preferencias</a>
+        </div>
       </div>
     </footer>
   </body>
